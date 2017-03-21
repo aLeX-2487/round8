@@ -95,9 +95,9 @@ a{
     width: 100%;
 }
 .main-3{
-    width: 60%;
+    width: 64%;
     height: 6.4rem;
-    margin: 0 20%;
+    margin: 0 18%;
     text-align: left;
     font-size: 1.6rem;
     line-height: 6.4rem;
@@ -111,9 +111,9 @@ a{
     text-decoration: none;
 }
 .main-4{
-    width: 60%;
+    width: 64%;
     height: 6.4rem;
-    margin: 0 20%;
+    margin: 0 18%;
     padding: 2rem 0;
     border: 1px solid #F8F8F8;
 }
@@ -123,10 +123,13 @@ a{
     color: black;
     line-height: 2.4rem;
 }
+.main-4 p:hover{
+    color: white;background: #29B078;
+}
 .main-5{
-    width: 60%;
+    width: 64%;
     height: 6.4rem;
-    margin: 0 20% 3% 20%;
+    margin: 0 18% 3% 18%;
     padding: 0;
     line-height: 6.4rem;
     font-size: 1.5rem;
@@ -136,9 +139,14 @@ a{
     display: block;
     clear:both;
 }
+.main-3,.main-4,.main-5,.content{
+    width: 1200px!important;
+    margin: 0 auto 3% auto;
+
+
+}
 .content{
-    width: 60%;
-    margin: 0 20%;
+    width: 1200px;
     padding: 0;
     border: 1px solid #F8F8F8;
     background: white;

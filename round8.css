@@ -1,7 +1,10 @@
-html{font-size: 62.5%;min-width: 1360px;max-width:1920px;}
-body{width:100%;margin: 0;padding: 0;font-family:"微软雅黑",sans-serif;background: #F8F8F8;overflow-x:hidden  }
+html{font-size: 62.5%;min-width: 1300px;max-width:1920px;}
+body{width:100%;margin: 0;padding: 0;font-family:"微软雅黑",sans-serif;background: #F8F8F8;}
 
-
+@media (min-width: 1440px){}
+    .container {
+        width: 1250px;
+    }}
 
 @media screen and (max-width:1280px) {
     html{font-size:40%}
@@ -190,9 +193,9 @@ p1{
     height: 6rem;
     font-size: 2rem;
     border: 1px solid #F8F8F8;
-    box-shadow: 1px 1px 1px 1px #F8F8F8
-    -webkit-box-shadow:1px 1px 1px 1px #F8F8F8;
-    -moz-box-shadow:1px 1px 1px 1px #F8F8F8;
+    box-shadow: 1px 1px 1px 1px #F8F8F8,-1px -1px 1px 1px #F8F8F8;
+    -webkit-box-shadow:1px 1px 1px 1px gainsboro;
+    -moz-box-shadow:1px 1px 1px 1px #F8F8F8,-1px -1px 1px 1px #F8F8F8;
     border-radius: 6rem;
     background: white;
     color: #29B078;
@@ -248,13 +251,13 @@ p1{
 
     width: calc(25% - 4rem);
     background: white;
-    border: 1px  #F8F8F8;
-    border-style: ridge;
-    box-shadow:0 0 1px 1px #F8F8F8;
-    -webkit-box-shadow:0 0 1px 1px #F8F8F8;
-    -moz-box-shadow:0 0 1px 1px #F8F8F8;
+    border: 1px solid  #F8F8F8;
+
+    box-shadow:inset -1px -1px 1px 1px gainsboro;
+    -webkit-box-shadow:inset -1px -1px 1px 1px gainsboro;
+    -moz-box-shadow:inset -1px -1px 1px 1px gainsboro;
 }
-.active-1
+
 
 .carousel-indicators .active, .carousel-indicators li {
     width: 15px;

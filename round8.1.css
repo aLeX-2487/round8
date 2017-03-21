@@ -138,10 +138,14 @@ a{
     padding: 0;
     text-align: center;
     line-height: 3.2rem!important;
-    list-style: url(./cir-2.png);
-
 
 }
+.content-2-1:hover {
+    list-style: url(./cir-1.png);
+    list-style-position:inside;
+    color: orange!important;
+}
+.content-2-1 a:hover{text-decoration: none}
 .content-2-1{
     width: 100%;
     padding-left: 32%;
@@ -151,6 +155,9 @@ a{
     color: #29B078;
     line-height: 3rem;
     padding-bottom: 0;
+    list-style: url(./cir-2.png);
+    list-style-position:inside;
+
 }
 
 li a{
@@ -160,10 +167,11 @@ li a{
     line-height: 2.5rem;
 
 }
+li a:hover{
+    color: orange;
+}
 
 
-
-li {    list-style-position:inside;}
 .content-3{
     width:42% ;
     height: 82rem;
@@ -272,8 +280,4 @@ li {    list-style-position:inside;}
 .footer a:hover{
     text-decoration: none;
     color:white ;
-}
-.content-2 a:hover{
-    text-decoration: none;
-    color:#29B078 ;
 }
