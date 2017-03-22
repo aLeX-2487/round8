@@ -1,17 +1,20 @@
-html{font-size: 62.5%;min-width: 1300px;max-width:1920px;}
+html{font-size: 62.5%;}
 body{width:100%;margin: 0;padding: 0;font-family:"微软雅黑",sans-serif;background: #F8F8F8;}
 
-@media (min-width: 1440px){}
-    .container {
-        width: 1250px;
-    }}
 
-@media screen and (max-width:1280px) {
-    html{font-size:40%}
-}
-@media screen and (max-width:820px) {
-    html{font-size:30%}
-}@media (min-width: 800px) {
+
+@media (max-width: 1280px){html{font-size:50%;}}
+@media (max-width: 992px){html{font-size:40%;}}
+@media (max-width: 768px){html{font-size:30%;}}
+
+@media (min-width: 768px)
+{.main-2,.main-4-2,.footer-0,.head-2,.container {width: 750px;}}
+@media (min-width: 992px)
+{.main-2,.main-4-2,.footer-0,.head-2, .container {width: 970px;}}
+@media (min-width: 1280px)
+{.main-2,.main-4-2,.footer-0,.head-2,.container {width: 1200px;}}
+
+
     .col-lg-2dot4 {
         float: left;
     }
@@ -27,7 +30,7 @@ body{width:100%;margin: 0;padding: 0;font-family:"微软雅黑",sans-serif;backg
     .col-lg-offset-2dot4 {
         width: 19.6%;
     }
-}
+
 
 .head{
     width: 100%;
@@ -35,19 +38,18 @@ body{width:100%;margin: 0;padding: 0;font-family:"微软雅黑",sans-serif;backg
     background: white;
 }
 .head-1{
-    width: 50%;
     height: 3.4rem;
-    text-align: center;
+    text-align: left;
     font-size: 1.25rem;
     line-height:3.4rem;
     color: #29B078;
     float: left;
 }
 .head-2{
-    width: 32%;
+    width: 1200px;
     height: 3.4rem;
-    float:left;
-    text-align: center;
+    margin:0 auto;
+    text-align: left;
     font-size: 1.25rem;
     line-height:3.4rem;
     color: #29B078;
@@ -55,7 +57,7 @@ body{width:100%;margin: 0;padding: 0;font-family:"微软雅黑",sans-serif;backg
 .head-2 a{
     width: 25px;
     height: 24px;
-    margin:calc((3.4rem - 24px)/2) 1.5%;
+    margin:calc((3.4rem - 24px)/2) 7px;
     float: right;
 }
 .share-1,.share-2,.share-3{
@@ -79,20 +81,24 @@ body{width:100%;margin: 0;padding: 0;font-family:"微软雅黑",sans-serif;backg
     background: #29B078;
 }
 .main-1{
-    width: 85%;
+    width: 30%;
     height: 8.2rem;
-    float: left;
-    color: white;
+    text-align: right;
+    float: right;
+}
+.main-2{
+
+    height: 8.2rem;
+    margin: 0 auto;
 }
 .main-1-1{
-    width: 6.2%;
     height: 8.2rem;
     font-size: 1.5rem;
     line-height: 8.2rem;
-    margin-right: 2%;
+    padding: 0 6%;
     float:right;
     text-align: center;
-    letter-spacing: .6em;
+
 
 }
 .main-1-1:hover{
@@ -135,7 +141,6 @@ a:hover,a:visited{color: white}
     right: 18%;
 }
 span{
-    width: 100%;
     float: left;
     text-align: right;
     font-size: 4.5rem;
@@ -179,15 +184,7 @@ span{
     margin: 0 0 0 5%;
     color: #29B078;
 }
-.main-2{
-    width: 100%;
-    height: 12rem;
-    font-size: 2rem;
-    line-height: 12rem;
-    text-align: center;
-    font-weight: 600;
 
-}
 p1{
     width: 6rem;
     height: 6rem;
@@ -318,17 +315,18 @@ a:hover .col-lg-2dot4{
      font-weight: 600;
  }
 .main-4-2{
-    width: 100%;
-
     height: 4rem;
     line-height: 4rem;
     text-align: center;
+    margin: 0 auto;
 }
 .main-4-2 a{
-
+    width: 6%;
+    margin:0 2%;
     font-size: 1.2rem;
     height: 4rem;
-    margin-right: 4.5%;
+    text-align:center;
+
     color: gray;
     float: left;
     text-decoration: none;
@@ -340,7 +338,10 @@ a:hover .col-lg-2dot4{
     width: 100%;
     height: 21rem;
     background: #29B078;
-    padding: 0 calc((100% - 98rem)/2);
+}
+.footer-0{
+    height: 18rem;
+    margin: 0 auto;
 }
 .footer-1,.footer-2,.footer-3{
     width: 33.33%;
@@ -391,6 +392,8 @@ a:hover .col-lg-2dot4{
     vertical-align: middle;
     text-align: right;
     height: 18rem;
+    float: right;
+    padding-top: 16%;
 }
 .footer-4{
     width: 100%;
